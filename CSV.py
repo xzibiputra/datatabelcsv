@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 table = pd.read_csv("https://academy.dqlab.id/dataset/penduduk_gender_head.csv")
+#dataset diambil dari website dqlab.id
 table.head()
 x_label = table ['NAMA KELURAHAN']
 plt.bar(x=np.arange(len(x_label)),height=table['LAKI-LAKI WNI'])
